@@ -1,0 +1,8 @@
+vendor/
+
+tests/.env
+
+.phpunit.result.cache
+tests/.env.*
+tests/credentials.json
+error_*
