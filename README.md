@@ -1,6 +1,6 @@
 # Keycloak PHP SDK
 
-This private repository preserves `acsystems/keycloak-php-sdk` for UnityStack applications.
+This public repository preserves `acsystems/keycloak-php-sdk` for NABU and UnityStack applications.
 Release `v4.4.1` contains the unchanged PHP source from upstream `4.4.0`, with
 provenance documentation and without the upstream test credentials file or stale
 development lock file. See [UPSTREAM.md](UPSTREAM.md) for source verification

@@ -1,6 +1,6 @@
 # Source and release notes
 
-This repository is an independent UnityStack snapshot of the MIT-licensed
+This repository is a public recovery snapshot for NABU and UnityStack of the MIT-licensed
 `acsystems/keycloak-php-sdk` package. The Composer package name and `Keycloak`
 namespace are retained for compatibility with existing applications.
 
@@ -30,7 +30,7 @@ Git history is not included in the published branch.
 
 ## Release v4.4.1
 
-This release restores a source under UnityStack's control after the upstream download
+This release restores a controlled source for NABU and UnityStack after the upstream download
 became unavailable. It contains no SDK behavior changes or new security fixes.
 Upstream is marked abandoned on Packagist; this snapshot does not establish
 compatibility with additional Keycloak versions.
@@ -58,10 +58,11 @@ Existing constraints `^4.2` and `^4.4` accept `4.4.1`. A dependency's own
 repository declarations are not inherited, so the root application must declare
 this source even when the SDK is required indirectly by a core package.
 
-This repository is private. Local development, CI, and deployment must have read
-access. Keep tokens and SSH private keys outside `composer.json` and Git. A
-GitHub token supplied through Composer's auth configuration or `COMPOSER_AUTH`
-can download archives; SSH access can be used for source installs.
+This repository and its release archives are public. Development, CI, and
+deployment can download the SDK without GitHub credentials. GitHub authentication
+is optional for higher API rate limits; keep any tokens or SSH private keys
+outside `composer.json` and Git. Other private application dependencies still
+require their own access configuration.
 
 The upstream integration tests create and delete a Keycloak realm. Run them only
 against a disposable test realm, with credentials supplied locally; they are not
